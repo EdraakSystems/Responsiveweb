@@ -8,6 +8,7 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 	<title>AdminHub</title>
 </head>
@@ -67,7 +68,7 @@
 				</a>
 				<ul class="dropdown">
 					<li><a href="#">Order list </a></li>
-					<li><a href="#">Order Edit</a></li>
+					<li><a href="index.html">Order Edit</a></li>
 					<li><a href="#">Order Add</a></li>
 				</ul>
 			</li>
@@ -244,120 +245,114 @@
 				</a>
 			</div>
 
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>1020</h3>
-						<p>New Order</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-						<h3>2834</h3>
-						<p>Visitors</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
-						<h3>$2543</h3>
-						<p>Total Sales</p>
-					</span>
-				</li>
-			</ul>
 
 
-			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Recent Orders</h3>
-						<i class='bx bx-search' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>User</th>
-								<th>Date Order</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status process">Process</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="todo">
-					<div class="head">
-						<h3>Todos</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<ul class="todo-list">
-						<li class="completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-					</ul>
-				</div>
-			</div>
+
+	
+          
+            <div class="container">
+                <div class="to">
+                  
+                    <ul class="item">
+                      <h1>Visibilty Status</h1>
+                      <div class="cn">
+                      <li><input type="radio" name="option">Published</li>
+                      <li><input type="radio" name="option">Scheduled</li>
+                      <li><input type="radio" name="option">Hidden</li>
+                      </div>
+                    </ul>
+                    <!-- <div class="ve"> -->
+                      
+                    <ul class="item">
+                      
+                      <h1>Publish Schedule</h1>
+                      
+                      <h2>Date</h2>
+                      <div class='input-group date' id='datetimepicker3'>
+                        <input type='text' class="form-control" id="dateInput" />
+                        <span class="input-group-addon">
+                        
+    
+                              </span>
+                           </div>
+                        
+                           <h2>Time</h2>
+                           <div class='input-group date' id='datetimepicker3'>
+                            <input type='text' class="form-control" id="dateInput" />
+                            <span class="input-group-addon">
+                        
+        
+                                  </span>
+                               </div>
+                              </li>
+                              
+                          </ul>
+                        <!-- </div> -->
+                   
+                    <ul class="item">
+                      
+                      <h1>Cetaigoy</h1>
+                      <h2>List</h2>
+                      <!-- <label for="fruit-select">Clothes</label> -->
+                      <select id="fruit-select" name="fruit">
+                        <option value="apple">Clothes</option>
+                        <option value="banana" selected>Toys</option>
+                        <option value="orange">Cosmetic</option>
+                        <option value="pear">Laptop</option>
+                        <option value="pear">Mobile</option>
+                        <option value="pear">Watch</option>
+                      </select>
+                    </ul>
+                  
+                    <ul class="item">
+                      <h1>Categories Image Upload</h1>
+                      <form>
+                        <!-- <button> -->
+                        <h2>Choose an image:</h2>
+                        <button>
+                        <input type="file" id="image" name="image">
+                       </button>
+                      <button> 
+                        <input type="submit" value="Upload">
+                         </button>
+                      </form>
+    
+                    </ul>
+    
+                </div>
+    
+                <div class="cr">
+                    <div class="yu">
+    
+                      <!-- <img src="your-image-url-here" alt="Your image description here" /> -->
+                      <h1>basic Information</h1>
+                        <ul>
+                        
+                            <li>
+                                <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="Enter your Name" name="name" id="name" required>
+                            </li>
+                            <li>
+                                <label for="title"><b>Title</b></label>
+                                <input type="text" placeholder="Enter your Title" name="title" id="title" required>
+                            </li>
+                          </ul>
+                            
+                               <li>
+                                <label for="title"><b>Product Identifier URL</b></label>
+                                <input type="text" placeholder="Enter your Title" name="title" id="title" required>
+                              </li>
+                              
+    
+                          <ul>
+                        <img id="image" src="#" alt="Uploaded Image" class="cropped-image">
+                        <input type="hidden" id="croppedData" name="croppedData">
+                      </ul>
+                    </div>
+                </div>
+            </div>
+				
+			
 		</main>
 		<!-- MAIN -->
 	</section>
